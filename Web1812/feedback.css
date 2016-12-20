@@ -1,0 +1,29 @@
+.feedback {
+    border-radius: 0 10px 10px 0;
+    width: 300px;
+    background: #C4DA7F; /* Цвет фона */
+    color: #363636; /* Цвет текста */
+	font-family: 'Architects Daughter', cursive;
+    position: fixed; /* Фиксируем на одном месте  */
+    min-height: 100px; /* Минимальная высота */
+    top: 150px; left: -320px;
+    border-right: 20px solid #22B14C; /*  граница справа */
+    padding: 10px;
+    transition: left 1s; /* Анимация */
+   }
+   .feedback img {
+    float: left;
+    margin: 0 10px 0 0;
+   }
+   .feedback::after {
+    content:'Feedback'; /* Выводим текст */
+    color: #fff; /* Цвет надписи */
+    position: absolute; /* Абсолютное позиционирование */
+    right: -47px; bottom: 50px;
+    transform: rotate(-90deg); /* Поворачиваем текст */
+    -webkit-transform: rotate(-90deg);
+   }
+   .feedback:hover {
+    left: 0; /* При наведении сдвигаем вправо */
+	
+   }
